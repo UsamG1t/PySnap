@@ -1,7 +1,7 @@
 [project]
 name = "pysnap"
 description = "python VBoxManage tools"
-version = "0.0.6"
+version = "0.0.7"
 dependencies = []
 
 [build-system]
