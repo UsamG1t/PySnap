@@ -1,0 +1,18 @@
+[project]
+name = "pysnap"
+description = "python VBoxManage tools"
+version = "0.0.6"
+dependencies = []
+
+[build-system]
+requires = ["build", "doit", "setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.package-dir]
+pysnap = "pysnap"
+
+[tool.setuptools.package-data]
+pysnap = ["pysnap/vbsnap/*", "pysnap/vbscan/*", "pysnap/common/*"]
+
+[project.scripts]
+vbsnap = "pysnap.vbsnap.__main__:starter"
